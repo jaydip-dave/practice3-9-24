@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./EdgecutResponsive.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            width: 100%;
+            margin: auto;
+        }
+
+
+        #navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        #list {
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        #logo {
+            margin-left: 20px;
+        }
+
+        #loginsearch {
+            margin-right: 20px;
+        }
+
+        .fa-search {
+            font-size: 20px
+        }
+
+
+
+        /* first section */
+
+        #firstsection {
+            width: 100%;
+            display: flex;
+            height: 350px;
+            /* background-color: #f1eded; */
+        }
+
+        #fsb {
+            width: 100%;
+            background-color: #f1eded;
+        }
+
+        #firstpart {
+            padding-top: 50px;
+            width: 40%;
+            margin: 10px;
+            margin-left: 20px
+        }
+
+        #firstpart h1 {
+            text-transform: uppercase;
+        }
+
+        #firstpart p {
+            width: 75%;
+        }
+
+        #firstpart button {
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+
+        }
+
+        .Contactus {
+            background-color: #f89646;
+            color: white;
+            border: 1px solid #f89646;
+            margin-right: 5px;
+        }
+
+        .Contactus:hover {
+            background-color: white;
+            color: #f89646;
+            border: 1px solid #f89646;
+
+        }
+
+        .Aboutus {
+            background-color: #6bb7be;
+            color: white;
+            border: 1px solid #6bb7be;
+            margin-right: 5px;
+        }
+
+        .Aboutus:hover {
+            background-color: white;
+            color: #6bb7be;
+            border: 1px solid #6bb7be;
+            margin-right: 5px;
+        }
+
+        #secondpart {
+            width: 60%;
+            height: 300px;
+            margin-right: 20px;
+
+        }
+
+        #secondpart img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #slider {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        .sliderdott {
+            width: 15px;
+            height: 15px;
+            background-color: #6bb7be;
+            border-radius: 100%;
+            margin-bottom: 10px;
+        }
+
+        .sliderdott:hover {
+            background-color: #f89646;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        /*    heading    */
+        #headind {
+            margin-left: 20px
+        }
+
+        #headind h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+
+        /*      second section */
+
+        #secondsection {
+            margin-top: 30px;
+        }
+
+        #perentbox {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .box {
+            height: 350px;
+            width: 400px;
+            padding-top: 20px;
+            background-color: #f1eded;
+            margin: 20px;
+            /* border: 1px solid; */
+            border-radius: 5px;
+            padding-bottom: 10px;
+            overflow: hidden;
+
+
+        }
+
+        #image {
+            text-align: center;
+        }
+
+        #perentbox .box img {
+            width: 300px;
+            height: 250px;
+
+        }
+
+        #boxh1 {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 30px;
+
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            color: #6bb7be;
+            margin: 0px 20px;
+            font-weight: 100;
+            font-size: 20px;
+        }
+
+        /*      third section     */
+
+        #thirdsection {
+            margin-top: 30px;
+            background-color: #f1eded;
+            width: 100%;
+            height: 450px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #imgsection {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #about {
+            width: 600px;
+            height: 300px;
+        }
+
+        #textsection {
+            width: 50%;
+            height: 100%;
+        }
+
+        #btnRM {
+            width: 180px;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #6bb7be;
+            color: white;
+            border: 1px solid #6bb7be;
+            margin-right: 5px;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        #btnRM:hover {
+            background-color: white;
+            color: #6bb7be;
+            border: 1px solid #6bb7be;
+            margin-right: 5px;
+        }
+
+        #abouttext {
+            margin: 150px 50px;
+        }
+
+        #abouttext p {
+            width: 550px;
+        }
+
+        /* <!-- forth section headeing --> */
+
+        #forthsecheding {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 60px 0px;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        /* forth section */
+        #forthsection {
+            width: 100%;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        #blogbox {
+            height: 500px;
+            width: 400px;
+            box-shadow: 0px 0px 10px;
+            /* overflow: hidden; */
+        }
+
+        .blogimg {
+            width: 100%;
+            height: 40%;
+        }
+
+        #blogtext {
+            width: 300px;
+            margin: 25px;
+        }
+
+        #blogbtn {
+            width: 150px;
+            padding: 10px;
+            background-color: #6bb7be;
+            color: white;
+            border: 1px solid #6bb7be;
+            font-size: 15px;
+        }
+
+        #blogbox1 {
+            height: 525px;
+            width: 400px;
+            box-shadow: 1px 1px 10px;
+        }
+
+        /* <!-- fifth section heading --> */
+        #fifthsecheading {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 60px 0px;
+            font-weight: bolder;
+        }
+
+        /*<!----- fifth section ----->  */
+        #fifthsection {
+            width: 100%;
+            height: 350px;
+        }
+
+        #testimonial {
+            width: 900px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            box-shadow: 1px 1px 10px;
+
+        }
+
+        #testyimg {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #testyimg img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 13px solid #6bb7be;
+            margin: 25px;
+        }
+
+        #testytextsec {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #testytext {
+            width: 550px;
+        }
+
+        #testytext h2 {
+            color: #6bb7be;
+        }
+
+        #leftrightbtn {
+            text-align: center;
+            margin: 20px;
+            width: 100%;
+        }
+
+        #btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .LRbtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #6bb7be;
+            border-radius: 50%;
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+            color: white;
+
+        }
+
+        .LRbtn:hover {
+            background-color: black;
+        }
+
+        /* <!-- sixth section --> */
+
+        #sithsection {
+            width: 100%;
+            height: 500px;
+            background-color: #f1eded;
+            display: flex;
+            padding: 50px 0px;
+        }
+
+        #form {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .form {
+            margin-left: 20px;
+        }
+
+        #contus {
+            font-size: 30px;
+            font-weight: bolder;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: start;
+        }
+
+        .input,
+        .textarea {
+            padding: 15px 10px;
+            margin: 12px;
+            width: 90%;
+            text-transform: capitalize;
+            border: none;
+            box-shadow: 0px 0px 2px;
+        }
+
+        #formbtn {
+            width: 150px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #6bb7be;
+            border: #6bb7be;
+            color: white;
+        }
+
+        #formbtn:hover {
+            background-color: white;
+            color: #6bb7be;
+            border: 1px solid #6bb7be;
+        }
+
+        #map {
+            width: 50%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* footer seveth section */
+
+        #seventhsection {
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            color: white;
+        }
+
+        #info {
+            padding-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .call {
+            text-align: center;
+        }
+
+        .call:hover {
+            color: orange;
+        }
+
+        .call i {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .call span {
+            font-size: 20px;
+        }
+         
+        #overview{
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #quicklinks {
+           margin-left: 30px;
+        }
+        #options{
+            display: grid;
+            width: 150px;
+            grid-template-columns: 70% 30% ;
+            grid-row-gap: 10px;
+            grid-column-gap: 30px;
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+        #options a:hover{
+            color: orange;
+        }
+        
+        #instafeeds{
+            margin-left: 30px;
+            
+            
+        }
+        #instaimgs{
+            width: 300px;
+            display: grid;
+            
+            grid-row-gap: 30px;
+            grid-template-columns: 80px 80px 80px;
+            grid-template-rows:50px 50px ;
+        }
+        
+        .instaimg{
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            text-align: center;
+            padding: 6px;
+        }
+
+
+        .nlinput{
+            width: 70%;
+            padding: 10px;
+            margin: 20px 0px;
+        }
+        #newbtn{
+            width: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #6bb7be;
+            border: #6bb7be;
+            color: white;
+        }
+
+        #newbtn:hover {
+            background-color: white;
+            color: #6bb7be;
+            border: 1px solid #6bb7be;
+        }
+        #socialmedia{
+            margin-top: 20px;
+        }
+        #socialmedia a{
+                color: #6bb7be;
+                padding: 10px 15px;
+                border:1px solid #6bb7be;
+                border-radius: 5px;       
+        }
+        #socialmedia a:hover{
+            color: orange;
+            border: 1px solid orange;
+        }
+
+        /* <!-- copyright --> */
+
+        #copyright{
+            text-align: center;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navigation">
+        <div id="logo">
+            <h1>Edgecut</h1>
+        </div>
+
+        <div id="list">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Furnitures</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <div id="loginsearch">
+            <ul>
+                <li>Login <i class="fa fa-user"></i> </li>
+                <li><i class="fa fa-search"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- first section -->
+    <section id="fsb">
+        <section id="firstsection">
+            <div id="firstpart">
+                <h1>For All Your <br>
+                    Furniture Needs</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo
+                    maxime
+                    voluptatem a itaque suscipit.</p>
+                <button class="Contactus">Contact us</button>
+                <button class="Aboutus">About us</button>
+            </div>
+            <div id="secondpart">
+                <img src="./images/slider-img.png" alt="">
+            </div>
+        </section>
+        <div id="slider">
+            <div class="sliderdott"></div>
+            <div class="sliderdott"></div>
+            <div class="sliderdott"></div>
+        </div>
+    </section>
+    <!-- second section Heding -->
+    <div id="headind">
+        <h1>Our Furniture
+        </h1>
+        <p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+            be sure there isn't an
+        </p>
+    </div>
+    <!-- second section -->
+    <section id="secondsection">
+
+
+        <div id="perentbox">
+            <div class="box">
+                <div id="image">
+                    <img src="./images/sofa.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">brown Chair Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">100.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="./images/bad.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">Double Bed Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">200.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="./images/chair.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">House Chair Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">200.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="perentbox">
+            <div class="box">
+                <div id="image">
+                    <img src="./images/table.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">brown Table Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">100.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="./images/blue chair.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">Blue Chair Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">200.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="./images/dressing table.png" alt="">
+                </div>
+                <div>
+                    <h1 id="boxh1">Brown Table Design</h1>
+                </div>
+                <div id="footer">
+
+                    <div id="price">$<span style="color: black;">200.00</span></div>
+                    <div id="buynow">Buy Now</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- third section -->
+    <section id="thirdsection">
+        <div id="imgsection">
+            <img src="./images/about-img.png" alt="" id="about">
+        </div>
+
+        <div id="textsection">
+            <div id="abouttext">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam
+                    repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est
+                    corporis tempore.</p>
+                <button id="btnRM">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- forth section headeing -->
+    <div id="forthsecheding">
+        <p>Latest Blog</p>
+    </div>
+    <!-- forth section  -->
+    <section id="forthsection">
+        <div id="blogbox">
+            <div id="upsection">
+                <img src="./images/b1.jpg" alt="" class="blogimg">
+            </div>
+            <div id="blogtext">
+                <h1>Look even slightly <br>believable. If you are</h1>
+                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <button id="blogbtn">Read More</button>
+            </div>
+        </div>
+        <div id="blogbox">
+            <div id="upsection">
+                <img src="./images/b2.jpg" alt="" class="blogimg">
+            </div>
+            <div id="blogtext">
+                <h1>Anything embarrassing <br> hidden in the middle</h1>
+                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <button id="blogbtn">Read More</button>
+            </div>
+        </div>
+        <div id="blogbox1">
+            <div id="upsection">
+                <img src="./images/b3.jpg" alt="" class="blogimg">
+            </div>
+            <div id="blogtext">
+                <h1>Molestias magni natus dolores odio commodi. Quaerat!</h1>
+                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <button id="blogbtn">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- fifth section heading -->
+    <div id="fifthsecheading">
+        <h1>Testimonial</h1>
+    </div>
+    <!-- fifth section -->
+    <section id="fifthsection">
+        <div id="testimonial">
+            <div id="testyimg">
+                <img src="./images/client.jpg" alt="">
+            </div>
+            <div id="testytextsec">
+                <div id="testytext">
+                    <i href="" class="fa fa-quote-left"></i>
+                    <h2>Siaalya</h2>
+                    <p>It is a long established fact that a reader will bedistracted by the readable cIt is a long
+                        established factthat a reader will be distracted by the readable c</p>
+                </div>
+            </div>
+        </div>
+        <div id="leftrightbtn">
+            <div id="btns">
+                <div class="LRbtn">
+                    <i class="fa fa-long-arrow-left"></i>
+                </div>
+                <div class="LRbtn">
+                    <i class="fa fa-long-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sixth section -->
+    <section id="sithsection">
+        <div id="form">
+            <form action="" class="form">
+                <span id="contus">Contact Us</span>
+                <input  class="input" type="text" placeholder="Your Nane" name="" id=""> <br>
+                <input class="input" type="text" placeholder="phone number" name="" id=""> <br>
+                <input class="input" type="text" placeholder="email" name="" id=""> <br>
+                <textarea class="textarea" name="" id="" cols="30" rows="7" placeholder="message"></textarea><br>
+                <button id="formbtn">SEND</button>
+
+            </form>
+        </div>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.96984552822!2d73.55112014287572!3d18.524686440527187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724808913025!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- seventh section -->
+
+    <footer id="seventhsection">
+        <div id="info">
+            <div class="call">
+                <i class="fa fa-phone"></i><br>
+                <span>Call : +01 123455678990</span>
+            </div>
+            <div class="call">
+                <i class="fa fa-envelope"></i><br>
+                <span>Email : mail@domain.com</span>
+            </div>
+            <div class="call">
+                <i class="fa fa-map-marker"></i><br>
+                <span>Location</span>
+            </div>
+
+        </div>
+
+        <div id="overview">
+            <div id="quicklinks">
+                <h3>QUICK LINKS</h3>
+                <div id="options">
+                    <a>home</a>
+                    <a>About</a>
+                    <a>Furniture</a>
+                    <a>Blog</a>
+                    <a>Contact-Us</a>
+                </div>
+            </div>
+
+            <div id="instafeeds">
+                <h3>INSTAGRAM FEEDS</h3>
+                <div id="instaimgs">
+                    <img  class="instaimg" src="./images/sofa.png" alt="">
+                    <img class="instaimg" src="./images/bad.png" alt="">
+                    <img  class="instaimg"src="./images/chair.png" alt="">
+                    <img class="instaimg" src="./images/table.png" alt="">
+                    <img  class="instaimg"src="./images/blue chair.png" alt="">
+                    <img class="instaimg" src="./images/dressing table.png" alt="">
+                </div>
+                
+            </div>
+
+            <div id="NEWSLETTER">
+                <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                <form action="">
+                    <input type="email" placeholder="Enter Your Email" class="nlinput">
+                    <button id="newbtn">Subscribe</button>
+                </form>
+                <div id="socialmedia">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </footer>
+
+
+    <!-- footer -->
+
+            <p id="copyright">© 2024 All Rights Reserved. By JAYDIP DAVE</p>
+
+  
+</body>
+
+</html>
